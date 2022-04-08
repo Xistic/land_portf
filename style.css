@@ -1,0 +1,247 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("fonts/gilroy.ttf");
+}
+@font-face {
+    font-family: Gilroy_bold;
+    src: url("fonts/gilroy_bold.ttf");
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    z-index: 1;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 946px;
+}
+.nav a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Gilroy';
+    text-decoration: none;
+    height: 80px;
+    color: #828282;
+    align-items: center;
+}
+.nav a:hover{
+    font-size: 20px;
+    color: #000000;
+    transition: 1s;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    width: 946px;
+    border-bottom: 2px solid black;
+}
+/*BUTTONS*/
+button {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    border: 0;
+    font-family: "gilroy_bold";   
+    font-size: 18px;
+    transition: 1s;
+    text-align: center;
+    height: 60px;
+}
+button:hover{
+    font-size: 20px;
+    color: #000;
+}
+/*MAIN*/
+main{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw
+}
+section{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    left: 0 ;
+}
+.first{
+    width: 946px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang{
+    display: flex;
+    flex-direction: row;
+    transform: rotate(-90deg);
+}
+.lang a{
+    font-family: 'Gilroy_bold';
+    text-decoration: none;
+    color: #000;
+}
+h1{
+    font-family: 'Gilroy_bold';
+    font-size: 47px;
+}
+a{
+    font-family: 'Gilroy';
+    font-size: 18px;
+}
+/**MAIN****SECOND**SEC***/
+.second{
+    padding-top: 4%;
+}
+.second_sec{
+    display: flex;
+    width: 100%;
+    background-color: #F6F6F6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 506px;
+}
+p{
+    font-family: 'Gilroy';
+    font-size: 18px;
+}
+/**MAIN****THIRD**SEC***/
+
+.third{
+    padding-top: 4%;
+}
+.third_sec{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.programms{
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+.rate{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+}
+figure{
+    width: 40px;
+    padding-top: 5%;
+    margin: 0 0 0 3.5%;
+    float: left;
+}
+figure img{
+    width: 70%;
+}
+.op_img img{
+    width: 45%;
+    height: 89px;
+}
+/**MAIN****FRTH**SEC***/
+.frth{
+    padding-top: 4%;
+}
+.frth_sec{
+    display: flex;
+    width: 100%;
+    background-color: #F6F6F6;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.frth_sec img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.frth_sec h1{
+    font-size: 34px;
+}
+.frth_sec a{
+    text-decoration:underline;
+    color: rgb(0, 0, 0);
+}
+.phot_mar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+
+}
+.phot_mar a{
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+/**FOOOOOOOTER***/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 50px;
+    border-radius: 30px;
+    transition: 1s;
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family:'gilroy';
+    font-size: 18px;
+    transition: 1s;
+}
+.foot_cont{
+    padding-top: 8%;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30%;
+}
+.in{
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+}
+.in:hover{
+    filter: grayscale(0);
+}
+.in img{
+    width: 50px;
+}
+
+
+.like{
+    color: #828282;
+    padding-top: 8%;
+}
