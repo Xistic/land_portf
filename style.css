@@ -22,12 +22,21 @@ header{
     top: 0;
     z-index: 1;
 }
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 946px;
+.menu  ul,ol{
+    list-style: none;
 }
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+.menu ul li a{
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 10px 60px 10px 60px;
+    text-decoration: none;
+    color: #000; 
+}
+
 .nav a{
     display: flex;
     flex-direction: row;
@@ -72,6 +81,12 @@ main{
     justify-content: center;
     flex-direction: column;
     width: 100vw
+}
+.main_photo{    
+    background: url(img/index.jpeg);
+    width: 940px;
+    height: 400px;
+    background-repeat: no-repeat;
 }
 section{
     flex-direction: column;
@@ -244,4 +259,284 @@ footer{
 .like{
     color: #828282;
     padding-top: 8%;
+}
+
+@media screen and (max-width:1000px){
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .line{
+        opacity: 0;
+    }
+    header{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        z-index: 1;
+    }
+    [for=burger]{
+        display: block;
+        position: fixed;
+        width: 10px;
+        text-align: center;
+        right: 20px;
+        top: 10px;
+    }
+    [for=burger]::before{
+        position: absolute;
+        content: '☰';
+        font-size: 50px;
+    }
+    nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.692);
+        width: 100%;
+        user-select: none;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    #burger:checked + label + nav{
+        display: block;
+        animation: show .5s ease;
+    }
+    #burger:checked +[for=burger]::before{
+        content: '⮾';
+    }
+
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .menu  ul,ol{
+        list-style: none;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul li a{
+        display: block;
+        background: rgb(255, 255, 255);
+        text-decoration: none;
+        color: #000; 
+    }
+
+    /*BUTTONS*/
+    button {
+        background-color: transparent;
+        color: #000000;
+        outline: none;
+        border: 0;
+        font-family: "gilroy_bold";   
+        font-size: 18px;
+        transition: 1s;
+        text-align: center;
+        height: 60px;
+    }
+    button:hover{
+        font-size: 20px;
+        color: #000;
+    }
+    /*MAIN*/
+    main{
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main_photo{
+        width: 100vw;
+        background: url(img/index_media.jpg);
+        background-repeat: no-repeat;
+    }
+
+    section{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    .first{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        left: 0;
+        align-items: flex-start;
+    }
+    .lang{
+        display: flex;
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    .lang a{
+        font-family: 'Gilroy_bold';
+        text-decoration: none;
+        color: #000;
+    }
+    h1{
+        font-family: 'Gilroy_bold';
+        font-size: 47px;
+    }
+    a{
+        font-family: 'Gilroy';
+        font-size: 18px;
+    }
+    /**MAIN****SECOND**SEC***/
+    .second{
+        padding-top: 4%;
+    }
+    .second_sec{
+        display: flex;
+        width: 100%;
+        background-color: #F6F6F6;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 506px;
+    }
+    p{
+        font-family: 'Gilroy';
+        font-size: 18px;
+    }
+    /**MAIN****THIRD**SEC***/
+    
+    .third{
+        padding-top: 4%;
+    }
+    .third_sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .programms{
+        padding-top: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rate{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    figure{
+        width: 30px;
+        padding-top: 1px;
+        margin: 0 0 0 3.5%;
+        float: left;
+    }
+    figure img{
+        width: 70%;
+    }
+    .op_img img{
+        width: 80%;
+        padding-top: 5%;
+        
+    }
+    /**MAIN****FRTH**SEC***/
+    .frth{
+        padding-top: 4%;
+    }
+    .frth_sec{
+        display: flex;
+        width: 100%;
+        background-color: #F6F6F6;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 3%;
+    }
+    
+    .frth_sec img:hover{
+        transform: scale(1.05);
+        transition: 1s;
+    }
+    .frth_sec h1{
+        font-size: 34px;
+    }
+    .frth_sec img{
+        width: 80%;
+    }
+    .frth_sec a{
+        text-decoration:underline;
+        color: rgb(0, 0, 0);
+    }
+    .phot_mar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5%;
+    
+    }
+    .phot_mar a{
+        margin-top: 2%;
+        margin-bottom: 8%;
+    }
+    /**FOOOOOOOTER***/
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        height: 40px;
+        border-radius: 30px;
+        transition: 1s;
+    }
+    .btn a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family:'gilroy';
+        font-size: 18px;
+        transition: 1s;
+    }
+    .foot_cont{
+        padding-top: 8%;
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30%;
+    }
+    .in{
+        width: 20%;
+        height: 20%;
+        filter: grayscale(100%);
+    }
+    .in:hover{
+        filter: grayscale(0);
+    }
+    .in img{
+        width: 50px;
+    }
+    
+    
+    .like{
+        color: #828282;
+        padding-top: 8%;
+    }
 }

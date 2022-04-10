@@ -7,13 +7,17 @@
   </head>
   <body>
       <header>
-        <div class="nav">
-          <a href="#">Home</a>
-          <a href="#about">About me</a>
-          <a href="#skills">Skills</a>
-          <a href="#portfol">Portfolio</a>
-          <a href="#">Contacts</a>
-        </div>
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+        <nav class="menu">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfol">Portfolio</a></li>
+              <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </nav>
         <div class="line"></div>
       </header>
       <main>
@@ -28,8 +32,9 @@
                 <a href="#">ENG</a>
               </p>
             </div>
+            
           </div>
-          <div><img src="img/index.jpeg"></div>
+          <div class="main_photo"></div>
         </section>
         <section class="second" id="about">
           <div class="second_sec">
@@ -111,7 +116,7 @@
         </section>
       </main>
       <footer>
-        <div class="foot_cont">
+        <div class="foot_cont" id="contacts">
           <h1>Contacts</h1>
           <p>Want to know more or just chat?<br>You are welcome!</p>
           <div class="btn">
